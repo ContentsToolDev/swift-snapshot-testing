@@ -1,10 +1,9 @@
 import Foundation
 
-#if canImport(SwiftSyntax509)
+#if canImport(SwiftSyntaxWrapper)
   import SnapshotTesting
   import SwiftParser
-  import SwiftSyntax
-  import SwiftSyntaxBuilder
+  import SwiftSyntaxWrapper
   import XCTest
 
   /// Asserts that a given value matches an inline string snapshot.
@@ -209,7 +208,7 @@ public struct InlineSnapshotSyntaxDescriptor: Hashable {
     self.trailingClosureOffset = trailingClosureOffset
   }
 
-  #if canImport(SwiftSyntax509)
+  #if canImport(SwiftSyntaxWrapper)
     /// Generates a test failure immediately and unconditionally at the described trailing closure.
     ///
     /// This method will attempt to locate the line of the trailing closure described by this type
@@ -266,7 +265,7 @@ public struct InlineSnapshotSyntaxDescriptor: Hashable {
 
 // MARK: - Private
 
-#if canImport(SwiftSyntax509)
+#if canImport(SwiftSyntaxWrapper)
   private let installTestObserver: Void = {
     final class InlineSnapshotObserver: NSObject, XCTestObservation {
       func testBundleDidFinish(_ testBundle: Bundle) {

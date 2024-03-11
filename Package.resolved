@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "swift-syntax",
+      "identity" : "swift-syntax-xcframeworks",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-syntax.git",
+      "location" : "https://github.com/ContentsToolDev/swift-syntax-xcframeworks",
       "state" : {
-        "revision" : "08a2f0a9a30e0f705f79c9cfaca1f68b71bdc775",
-        "version" : "510.0.0"
+        "branch" : "main",
+        "revision" : "fb8e587d8a85e4fdfed67949d22ddedfc16748d5"
       }
     }
   ],
